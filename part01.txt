@@ -1,0 +1,106 @@
+Question: What is the shortcut to comment and uncomment a selected block of code in Visual 
+Studio? 
+Answer: To comment use Ctrl + k + c
+        To uncomment use Ctrl + k + u  
+--------------------------------------------------------------------------------------------------
+Question: Explain the difference between a runtime error and a logical error with examples. 
+
+Definition:
+A runtime error occurs while the program is running. The code may compile successfully, but something goes wrong during execution.
+
+Causes:
+
+Division by zero
+
+🔹 2. Logical Error:
+Definition:
+A logical error occurs when the program runs without crashing, but it produces incorrect or unexpected results due to a mistake in the logic.
+
+Causes:
+
+Incorrect use of conditions
+
+Using the wrong operator (e.g., - instead of +)
+
+Question: Why is it important to follow naming conventions such as PascalCase in C#?
+ 1. Improves Readability
+ 2. Consistency in Codebase
+ 3. Enhances Collaboration
+ 4. Follows Language Standards
+ 5. Easier Maintenance and Debugging
+------------------------------------------------------------------------------------------------
+Question: Explain the difference between value types and reference types in terms of memory 
+allocation.
+
+1. Value Types:
+
+Memory Allocation:
+Stored directly in the stack memory.
+
+Behavior:
+When a value type is assigned to another variable, a copy of the data is made. Changes to one variable do not affect the other.
+
+Examples:
+int, float, bool, char, struc
+
+2. Reference Types:
+Memory Allocation:
+Stored in the heap memory. A reference (or pointer) to the memory location is stored in the stack.
+
+Behavior:
+When a reference type is assigned to another variable, both variables refer to the same object in memory. Changes to one affect the other.
+
+Examples:
+class, array, string, object
+-------------------------------------------------------
+Question: What will be the output of the following code? Explain why: 
+int a = 2, b = 7; 
+Console.WriteLine(a % b);
+
+The modulus operator % returns the remainder after division.
+the output of the following code is : 2
+-------------------------------------------------------
+Question: How does the && (logical AND) operator differ from the & (bitwise AND) operator? 
+
+1. && (Logical AND Operator):
+Used with:
+Boolean expressions (true or false)
+
+Purpose:
+Checks if both conditions are true.
+
+Short-Circuiting:
+Yes  — if the first condition is false, the second one is not evaluated.
+
+2. & (Bitwise AND / Logical AND):
+Used with:
+
+Integers → Performs bitwise AND
+
+Booleans → Acts like logical AND without short-circuiting
+
+No Short-Circuiting:
+Both sides are always evaluated, even if the first is false
+
+ -------------------------------------------------------
+Question: Why is explicit casting required when converting a double to an int? 
+
+ Answer:
+Explicit casting is required when converting a double to an int in C# because you are converting from a larger, more precise type to a smaller, less precise type, and there is a risk of data loss.
+
+-------------------------------------------------------
+Question: What exception might occur if the input is invalid and how can you handle it 
+
+Answer:
+If the input provided by the user is invalid (for example, entering a letter when a number is expected), a runtime exception might occur.
+ One of the most common exceptions in this case is: FormatException
+you can handle such exceptions using a try-catch block to avoid program crashes and display a friendly message to the user.
+
+-------------------------------------------------------
+Question: Given the code below, what is the value of x after execution? Explain why 
+int x = 5; 
+int y = ++x + x++; 
+the value of x after execution is : 7
+-------------------------------------------------------
+
+
