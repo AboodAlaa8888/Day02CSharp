@@ -1,0 +1,36 @@
+ Answer:
+C# is considered managed code because it runs under the supervision of the Common Language Runtime (CLR), which is part of the .NET framework.
+
+The CLR provides services such as:
+
+Automatic memory management (Garbage Collection)
+
+Exception handling
+
+Security enforcement
+
+Type safety
+
+Managed code means that the execution environment controls the program’s behavior and manages system resources, 
+making the code safer and more stable compared to unmanaged code (like C or C++).
+----------------------------------------------------------------------------------------
+
+ Answer:
+In C#, a struct is similar to a class in that both can:
+
+Have fields, properties, methods, and constructors.
+
+Be used to create custom data types.
+
+However, there are key differences:
+
+struct is a value type, while class is a reference type.
+
+struct is stored on the stack, while class is stored on the heap.
+
+struct does not support inheritance, but it can implement interfaces.
+
+struct is usually used for lightweight objects that do not require complex behavior.
+
+So when someone says “a struct is considered like a class before,” it means that struct has class-like capabilities,
+ but is designed for simpler use cases with different memory and behavior characteristics.

@@ -1,0 +1,69 @@
+
+ Compiled Languages:
+The source code is translated into machine code all at once before execution.
+
+Uses a compiler.
+
+Faster in performance.
+
+Errors are caught during compilation (before running).
+
+ Examples:
+C, C++, Go
+
+ Interpreted Languages:
+The code is executed line by line at runtime by an interpreter.
+
+Slower than compiled languages.
+
+Errors appear during execution.
+
+ Examples:
+Python, JavaScript, Ruby
+
+ Where does C# fall?
+C# is a hybrid language — both compiled and interpreted.
+
+First, it’s compiled into an intermediate language called MSIL (Microsoft Intermediate Language) using the C# compiler.
+
+Then, it’s interpreted and executed by the CLR (Common Language Runtime) at runtime.
+ So: C# uses compilation + runtime interpretation, making it managed and platform-independent via 
+---------------------------------------------------------------------------------------------------
+
+Answer:
+1. Implicit Casting
+Type: Automatic
+
+Null handling: Does not handle null
+
+Risk: Safe, no data loss
+
+Usage: Used when converting from a smaller type to a larger type (e.g., int to double). The compiler handles it automatically.
+
+2. Explicit Casting
+Type: Manual (requires a cast)
+
+Null handling: Does not handle null
+
+Risk: May cause data loss
+
+Usage: Used when converting from a larger type to a smaller type (e.g., double to int). The developer must use a cast.
+
+3. Convert Class
+Type: Manual (uses Convert methods)
+
+Null handling: Handles null safely
+
+Risk: Lower risk of exceptions
+
+Usage: Converts values between types, handles nulls, and returns default values if conversion fails.
+
+4. Parse Method
+Type: Manual (uses Parse methods)
+
+Null handling: Does not handle null
+
+Risk: High risk of exceptions (FormatException or ArgumentNullException)
+
+Usage: Parses a string to a numeric type. Input must be valid and non-null.
+
