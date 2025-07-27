@@ -12,7 +12,7 @@ Causes:
 
 Division by zero
 
-🔹 2. Logical Error:
+2. Logical Error:
 Definition:
 A logical error occurs when the program runs without crashing, but it produces incorrect or unexpected results due to a mistake in the logic.
 
